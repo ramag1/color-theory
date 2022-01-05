@@ -7,7 +7,8 @@ function ColorNav(props) {
     const {color, setColor} = useContext(ColorContext);
     console.log(color);
     let [tempColor, setTempColor] = useState('#0047AB');
-    // console.log(tempColor);
+
+
     let tempColorArr = [...tempColor.split("")]
     // console.log(tempColorArr)
     let tempColorArr2 = tempColorArr.splice(0, 1) ;
@@ -16,7 +17,6 @@ function ColorNav(props) {
     // console.log(tempColorArr.join(''));
     tempColor = (tempColorArr.join(''))
     setColor(tempColor)
-    console.log(color)
 
 
     return (
