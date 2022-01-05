@@ -2,6 +2,7 @@ import logo from './logo.svg';
 
 import { useState } from 'react';
 import { ColorContext } from './components/colorContext';
+import { Routes, Route, Link } from 'react-router-dom';
 
 import './App.css';
 import SchemeNav from './components/SchemeNav';
@@ -20,19 +21,21 @@ function App() {
   const [scheme, setScheme] = useState([]);
 
   return (
-    <div className="App">
-      <ColorContext.Provider value={{color, setColor, scheme, setScheme}}>
-        <SchemeNav />
-        <ColorNav />
-        {/* <Home />
-        <Mono />
-        <Analogic />
-        <Triad />
-        <Quad />
-        <Complementary /> */}
-      </ColorContext.Provider>
-    </div>
-  );
+		<div className='App'>
+			<ColorContext.Provider value={{ color, setColor, scheme, setScheme }}>
+				<SchemeNav />
+				<ColorNav />
+			</ColorContext.Provider>
+			<Routes>
+				<Route path='/home' element={<Home />} />
+				<Route path='/monochromatic' element={<Mono />} />
+				<Route path='/quad' element={<Quad />} />
+				<Route path='/triad' element={<Triad />} />
+				<Route path='/complementary' element={<Complementary />} />
+				<Route path='/analogic' element={<Analogic />} />
+			</Routes>
+		</div>
+	);
 }
 
 export default App;

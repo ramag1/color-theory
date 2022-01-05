@@ -20,8 +20,8 @@ function ColorNav(props) {
 
 
     return (
-			<div>
-				<h2>Select your color!</h2>
+			<div className="colorNav__div">
+				<h2 className="colorNav__h2">Select your color!</h2>
 
 				<p style={{ color: color }}>Color Selected: {color}</p>
 				<label>
