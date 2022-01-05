@@ -2,9 +2,9 @@ import logo from './logo.svg';
 
 import { useState } from 'react';
 import { ColorContext } from './components/colorContext';
-import SchemeNav from './components/SchemeNav';
 
 import './App.css';
+import SchemeNav from './components/SchemeNav';
 import Triad from './components/Triad';
 import Quad from './components/Quad';
 import Analogic from './components/Analogic';
@@ -16,20 +16,20 @@ import Complementary from './components/Complementary';
 
 function App() {
 
-  const [color, setColor] = useState(null)
-  const [scheme, setScheme] = useState(null)
+  const [color, setColor] = useState([]);
+  const [scheme, setScheme] = useState([]);
 
   return (
     <div className="App">
       <ColorContext.Provider value={{color, setColor, scheme, setScheme}}>
-        <ColorNav />
         <SchemeNav />
-        <Home />
+        <ColorNav />
+        {/* <Home />
+        <Mono />
         <Analogic />
         <Triad />
         <Quad />
-        <Mono />
-        <Complementary />
+        <Complementary /> */}
       </ColorContext.Provider>
     </div>
   );

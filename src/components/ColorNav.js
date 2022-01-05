@@ -1,22 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ColorContext } from './colorContext';
 
 
 function ColorNav(props) {
 
+    const {color, setColor} = useContext(ColorContext);
+
     return (
         <div>
 
-            <h2>Hello from component A!</h2>
-            <p>Username: {userInfo.name} </p>
-            <p style={{ color: userInfo.faveColor }}>
-                Favorite Color: {userInfo.faveColor}
+            <h2>Select your color!</h2>
+
+            <p style={{ color: color }}>
+               Color Selected: {color}
             </p>
             <label>
-                Select favorite color:{" "}
+                Click Here to Select Color:{" "}
                 <input
                 type="color"
                 onChange={(event) =>
-                    setUserInfo({ ...userInfo, faveColor: event.target.value })
+                    setColor(event.target.value)  
                 }
                 />
             </label>
