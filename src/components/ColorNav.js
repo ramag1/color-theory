@@ -6,29 +6,34 @@ function ColorNav(props) {
 
     const {color, setColor} = useContext(ColorContext);
     console.log(color);
-    let [tempColor, setTempColor] = useState('#0047AB');
+    // const [tempColor, setTempColor] = useState('#0047AB');
     // console.log(tempColor)
 
-    let tempColorArr = [...tempColor.split("")]
-    // console.log(tempColorArr)
-    let tempColorArr2 = tempColorArr.splice(0, 1) ;
-    // console.log(tempColorArr2)
-    // console.log(tempColorArr)
-    // console.log(tempColorArr.join(''));
-    tempColor = (tempColorArr.join(''))
-    setColor(tempColor)
+    function handleClick(event) {
+        const tempColor = event.target.value;
+        let tempColorArr = [...tempColor.split("")]
+        // console.log(tempColorArr)
+        let tempColorArr2 = tempColorArr.splice(0, 1) ;
+        // console.log(tempColorArr2)
+        // console.log(tempColorArr)
+        // console.log(tempColorArr.join(''));
+        // tempColor = (tempColorArr.join(''))
+        setColor(tempColorArr.join(''))
+
+    }
+
 
 
     return (
 			<div className="colorNav__div">
 				<h2 className="colorNav__h2">Select your color!</h2>
 
-				<p style={{ color: color }}>Color Selected: {color}</p>
+				<p style={{ color: `#${color}`}}>Color Selected: {color}</p>
 				<label>
 					Click Here to Select Color:{' '}
 					<input
 						type='color'
-						onChange={(event) => setTempColor(event.target.value)}
+						onChange={handleClick}
 					/>
 				</label>
 			</div>

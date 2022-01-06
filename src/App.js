@@ -17,7 +17,7 @@ import Complementary from './components/Complementary';
 
 function App() {
 
-  const [color, setColor] = useState([]);
+  const [color, setColor] = useState("28b89b");
   const [scheme, setScheme] = useState([]);
 
   return (
@@ -25,14 +25,14 @@ function App() {
 			<ColorContext.Provider value={{ color, setColor, scheme, setScheme }}>
 				<SchemeNav />
 				<ColorNav />
-			<Routes>
-				<Route path='/home' element={<Home />} />
-				<Route path='/monochromatic' element={<Mono />} />
-				<Route path='/quad' element={<Quad />} />
-				<Route path='/triad' element={<Triad />} />
-				<Route path='/complementary' element={<Complementary />} />
-				<Route path='/analogic' element={<Analogic />} />
-			</Routes>
+				<Routes>
+					<Route path='/' path="/home" element={<Home />} />
+					<Route path='/monochromatic' element={<Mono />} />
+					<Route path='/quad' element={<Quad />} />
+					<Route path='/triad' element={<Triad />} />
+					<Route path='/complementary' element={<Complementary />} />
+					<Route path='/analogic' element={<Analogic />} />
+				</Routes>
 			</ColorContext.Provider>
 		</div>
 	);
