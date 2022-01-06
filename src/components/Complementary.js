@@ -27,6 +27,10 @@ function Complementary(props) {
 		<div key={results.hex} className='scheme__div'>
 			<div className='scheme__details'>
 				<h2 className='scheme__h2'>About Complementary Colors </h2>
+				<p>
+					Complementary schemes are created by combining colors from opposite
+					sides of the color wheel.
+				</p>
 			</div>
 
 			<div className='scheme__colorBlocks'>

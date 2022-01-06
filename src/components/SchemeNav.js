@@ -23,16 +23,16 @@ function SchemeNav(props) {
 						<li id='monochrome'>Monochromatic</li>
 					</Link>
 					<Link to={'/analogic'}>
-						<li id='analogic'>Analogic</li>
+						<li id='analogic'>Analogous</li>
 					</Link>
 					<Link to={'/complementary'}>
 						<li id='complement'>Complementary</li>
 					</Link>
 					<Link to={'/triad'}>
-						<li id='complement'>Triad</li>
+						<li id='complement'>Triadic</li>
 					</Link>
 					<Link to={'/quad'}>
-						<li id='quad'>Quad</li>
+						<li id='quad'>Quadratic</li>
 					</Link>
 				</ul>
 			</div>

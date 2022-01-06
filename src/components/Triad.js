@@ -25,7 +25,10 @@ function Triad(props) {
 	return (
 		<div key={results.hex} className='scheme__div'>
 			<div className='scheme__details'>
-				<h2 className='scheme__h2'>About Triad Colors </h2>
+				<h2 className='scheme__h2'>About Triadic Colors </h2>
+				<p>
+					Triadic schemes are made up of hues equally spaced around color wheel.
+				</p>
 			</div>
 
 			<div className='scheme__colorBlocks'>

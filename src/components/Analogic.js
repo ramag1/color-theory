@@ -24,19 +24,24 @@ function Analogic(props) {
 
 	return (
 		<div key={results.hex} className='scheme__div'>
-			<div className="scheme__details"> 
-                <h2 className="scheme__h2">About Analogic Colors </h2>
-            </div>
-            
-            <div className="scheme__colorBlocks">
-            {results.colors.map((color) => {
-				return (
-					<div style={{ backgroundColor: `${color.hex.value}` }}>
-						{color.hex.value}
-					</div>
-				);
-			})}
-            </div>
+			<div className='scheme__details'>
+				<h2 className='scheme__h2'>About Analogous Colors </h2>
+				<p>
+					Analogous color schemes are also easy to create. Analogous color
+					schemes are created by using colors that are next to each other on the
+					color wheel.
+				</p>
+			</div>
+
+			<div className='scheme__colorBlocks'>
+				{results.colors.map((color) => {
+					return (
+						<div style={{ backgroundColor: `${color.hex.value}` }}>
+							{color.hex.value}
+						</div>
+					);
+				})}
+			</div>
 		</div>
 	);
 }

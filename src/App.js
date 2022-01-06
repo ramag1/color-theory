@@ -26,7 +26,8 @@ function App() {
 				<SchemeNav />
 				<ColorNav />
 				<Routes>
-					<Route path='/' path="/home" element={<Home />} />
+					<Route path='/' element={<Home />} />
+					<Route path='/home' element={<Home />} />
 					<Route path='/monochromatic' element={<Mono />} />
 					<Route path='/quad' element={<Quad />} />
 					<Route path='/triad' element={<Triad />} />

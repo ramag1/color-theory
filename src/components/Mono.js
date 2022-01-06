@@ -26,6 +26,11 @@ function Mono(props) {
 		<div key={results.hex} className='scheme__div'>
 			<div className='scheme__details'>
 				<h2 className='scheme__h2'>About Monochromatic Colors </h2>
+				<p>
+					Monochromatic color schemes are easy to create because they use only
+					one color. Monochromatic schemes use different tones from the same
+					angle on the color wheel (the same hue).
+				</p>
 			</div>
 
 			<div className='scheme__colorBlocks'>
