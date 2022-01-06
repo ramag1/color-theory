@@ -11,7 +11,7 @@ function Home(props) {
 				appeal. This is particularly helpful in web design.
                 <br/>
                 <br/>
-                
+
                 <h3>How To:</h3>
                 Select a shade
                 <br/>

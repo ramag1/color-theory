@@ -16,7 +16,7 @@ function Analogic(props) {
 				console.log(json);
 			})
 			.catch(console.error);
-	}, []);
+	}, [color]);
 
 	if (!results) {
 		return null;
@@ -29,15 +29,20 @@ function Analogic(props) {
 				<p>
 					Analogous color schemes are also easy to create. Analogous color
 					schemes are created by using colors that are next to each other on the
-					color wheel.
+					color wheel. 
+                    <h3> When to use:</h3> 
+                    Use when seeking a calm and unified look that won't distract from
+					the primary message. 
 				</p>
 			</div>
 
-			<div className='scheme__colorBlocks'>
+			<div key={results.hex} className='scheme__colorBlocksDiv'>
 				{results.colors.map((color) => {
 					return (
-						<div style={{ backgroundColor: `${color.hex.value}` }}>
-							{color.hex.value}
+						<div
+							className='scheme__colorBlocks'
+							style={{ backgroundColor: `${color.hex.value}` }}>
+							{color.hex.value} <br /> {color.name.value}
 						</div>
 					);
 				})}

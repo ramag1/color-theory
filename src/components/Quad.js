@@ -16,7 +16,7 @@ function Quad(props) {
 				console.log(json);
 			})
 			.catch(console.error);
-	}, []);
+	}, [color]);
 
 	if (!results) {
 		return null;
@@ -26,13 +26,23 @@ function Quad(props) {
 		<div key={results.hex} className='scheme__div'>
 			<div className='scheme__details'>
 				<h2 className='scheme__h2'>About Quadratic Colors </h2>
+				<p>
+					Triadic schemes are made up of hues equally spaced around color wheel
+					creating 90 degree or right angles.
+					<h3>When to use:</h3>
+					To be most effective it is best to let one of the 4 colors dominate.
+					Works well with ‘flashy’ subjects and wanting to call attention in a
+					dramatic manner.
+				</p>
 			</div>
 
-			<div className='scheme__colorBlocks'>
+			<div className='scheme__colorBlocksDiv'>
 				{results.colors.map((color) => {
 					return (
-						<div style={{ backgroundColor: `${color.hex.value}` }}>
-							{color.hex.value}
+						<div
+							className='scheme__colorBlocks'
+							style={{ backgroundColor: `${color.hex.value}` }}>
+							{color.hex.value} <br /> {color.name.value}
 						</div>
 					);
 				})}

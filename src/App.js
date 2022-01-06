@@ -17,7 +17,7 @@ import Complementary from './components/Complementary';
 
 function App() {
 
-  const [color, setColor] = useState("28b89b");
+  const [color, setColor] = useState('000000');
   const [scheme, setScheme] = useState([]);
 
   return (

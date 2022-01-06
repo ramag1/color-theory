@@ -6,7 +6,7 @@ function Mono(props) {
 	const { color } = useContext(ColorContext);
 	const [results, setResults] = useState(null);
 
-	const url = `https://www.thecolorapi.com/scheme?hex=${color}&format=json&mode=monochrome&count=3`;
+	const url = `https://www.thecolorapi.com/scheme?hex=${color}&format=json&mode=monochrome&count=4`;
 
 	useEffect(() => {
 		fetch(url)
@@ -16,7 +16,7 @@ function Mono(props) {
 				console.log(json);
 			})
 			.catch(console.error);
-	}, []);
+	}, [color]);
 
 	if (!results) {
 		return null;
@@ -30,14 +30,19 @@ function Mono(props) {
 					Monochromatic color schemes are easy to create because they use only
 					one color. Monochromatic schemes use different tones from the same
 					angle on the color wheel (the same hue).
+					<h3>When to use:</h3>
+					When you're seeking a harmonious, visually cohesive look. It doesn’t draw
+					attention to itself, instead letting the content to shine.
 				</p>
 			</div>
 
-			<div className='scheme__colorBlocks'>
+			<div className='scheme__colorBlocksDiv'>
 				{results.colors.map((color) => {
 					return (
-						<div style={{ backgroundColor: `${color.hex.value}` }}>
-							{color.hex.value}
+						<div
+							className='scheme__colorBlocks'
+							style={{ backgroundColor: `${color.hex.value}` }}>
+							{color.hex.value} <br /> {color.name.value}
 						</div>
 					);
 				})}

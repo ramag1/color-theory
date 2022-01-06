@@ -26,16 +26,15 @@ function ColorNav(props) {
 
     return (
 			<div className="colorNav__div">
-				<h2 className="colorNav__h2">Select your color!</h2>
-
-				<p style={{ color: `#${color}`}}>Color Selected: {color}</p>
+				<h2 className="colorNav__h2">Select your color</h2>
 				<label>
-					Click Here to Select Color:{' '}
-					<input
+					Click Below:{' '} <br/>
+					<input className="colorNav__input"
 						type='color'
 						onChange={handleClick}
 					/>
 				</label>
+				<p style={{ color: `#${color}`}}>Color Selected: {color}</p>
 			</div>
 		);
 }
