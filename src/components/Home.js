@@ -9,8 +9,7 @@ function Home(props) {
                 Color schemes are logical combinations of colors on the color wheel. The
 				purpose of a color scheme is to create an aesthetic feeling of style and
 				appeal. This is particularly helpful in web design.
-                <br/>
-                <br/>
+                <br/><br/>
 
                 <h3>How To:</h3>
                 Select a shade

@@ -14,9 +14,7 @@ function Complementary(props) {
 			.then((res) => res.json())
 			.then((json) => {
 				setResults(json);
-				console.log(json);
 			})
-			.catch(console.error);
 	}, [color]);
 
 	if (!results) {
@@ -24,10 +22,9 @@ function Complementary(props) {
 	}
 
 	return (
-		<div key={results.hex} className='scheme__div'>
+		<div className='scheme__div'>
 			<div className='scheme__details'>
 				<h2 className='scheme__h2'>About Complementary Colors </h2>
-				<p>
 					Complementary colors are shades that are located directly across from
 					each other on the wheel. These colors are complementary because they
 					are said to work well together. Creates a high-contrast and vibrant
@@ -36,10 +33,9 @@ function Complementary(props) {
 					This color scheme is useful when you need to emphasize something as it
 					focuses the attention towards a particular object. Often, a design
 					with a complementary combination of colors looks more traditional.
-				</p>
 			</div>
 
-			<div className='scheme__colorBlocksDiv'>
+			<div key={results.hex} className='scheme__colorBlocksDiv'>
 				{results.colors.map((color) => {
 					return (
 						<div

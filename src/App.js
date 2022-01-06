@@ -18,22 +18,21 @@ import Complementary from './components/Complementary';
 function App() {
 
   const [color, setColor] = useState('000000');
-  const [scheme, setScheme] = useState([]);
 
   return (
 		<div className='App'>
-			<ColorContext.Provider value={{ color, setColor, scheme, setScheme }}>
+			<ColorContext.Provider value={{ color, setColor}}>
 				<SchemeNav />
 				<ColorNav />
-				<Routes>
-					<Route path='/' element={<Home />} />
-					<Route path='/home' element={<Home />} />
-					<Route path='/monochromatic' element={<Mono />} />
-					<Route path='/quad' element={<Quad />} />
-					<Route path='/triad' element={<Triad />} />
-					<Route path='/complementary' element={<Complementary />} />
-					<Route path='/analogic' element={<Analogic />} />
-				</Routes>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/monochromatic' element={<Mono />} />
+          <Route path='/quad' element={<Quad />} />
+          <Route path='/triad' element={<Triad />} />
+          <Route path='/complementary' element={<Complementary />} />
+          <Route path='/analogic' element={<Analogic />} />
+        </Routes>
 			</ColorContext.Provider>
 		</div>
 	);

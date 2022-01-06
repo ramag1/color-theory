@@ -13,7 +13,6 @@ function Mono(props) {
 			.then((res) => res.json())
 			.then((json) => {
 				setResults(json);
-				console.log(json);
 			})
 			.catch(console.error);
 	}, [color]);
@@ -23,20 +22,18 @@ function Mono(props) {
 	}
 
 	return (
-		<div key={results.hex} className='scheme__div'>
+		<div className='scheme__div'>
 			<div className='scheme__details'>
 				<h2 className='scheme__h2'>About Monochromatic Colors </h2>
-				<p>
 					Monochromatic color schemes are easy to create because they use only
 					one color. Monochromatic schemes use different tones from the same
 					angle on the color wheel (the same hue).
 					<h3>When to use:</h3>
-					When you're seeking a harmonious, visually cohesive look. It doesn’t draw
-					attention to itself, instead letting the content to shine.
-				</p>
+					When you're seeking a harmonious, visually cohesive look. It doesn’t
+					draw attention to itself, instead letting the content to shine.
 			</div>
 
-			<div className='scheme__colorBlocksDiv'>
+			<div key={results.color} className='scheme__colorBlocksDiv'>
 				{results.colors.map((color) => {
 					return (
 						<div

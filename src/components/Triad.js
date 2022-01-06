@@ -13,7 +13,6 @@ function Triad(props) {
 			.then((res) => res.json())
 			.then((json) => {
 				setResults(json);
-				console.log(json);
 			})
 			.catch(console.error);
 	}, [color]);
@@ -23,24 +22,23 @@ function Triad(props) {
 	}
 
 	return (
-		<div key={results.hex} className='scheme__div'>
+		<div className='scheme__div'>
 			<div className='scheme__details'>
 				<h2 className='scheme__h2'>About Triadic Colors </h2>
-				<p>
-					Triadic schemes are made up of hues equally spaced around color wheel.
-				</p>
+				Triadic schemes are made up of hues equally spaced around color wheel.
 				<h3>When to Use:</h3>
 				By combining colors using the triadic principle we get lively and
 				cheerful space which is the most suitable for playful or colorful user
-				interfaces. Beware of this scheme featuring warm colors as it is very intense and can cause the feeling of discomfort in the UI if you color the equal amount of
-				space with each color.
-				<p></p>
+				interfaces. Beware of this scheme featuring warm colors as it is very
+				intense and can cause the feeling of discomfort in the UI if you color
+				the equal amount of space with each color.
 			</div>
 
-			<div className='scheme__colorBlocksDiv'>
+			<div key={results.hex} className='scheme__colorBlocksDiv'>
 				{results.colors.map((color) => {
 					return (
 						<div
+							
 							className='scheme__colorBlocks'
 							style={{ backgroundColor: `${color.hex.value}` }}>
 							{color.hex.value} <br /> {color.name.value}
