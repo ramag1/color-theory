@@ -1,12 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useContext, useState } from 'react';
+import { ColorContext } from './colorContext';
 
 function SchemeNav(props) {
+     const { scheme, setScheme } = useContext(ColorContext);
+
+    function setState(event) {
+        setScheme(event.target.id)
+        console.log(scheme)
+
+    }
+
     return (
         <div className="schemeNav__div">
             <h1 className="schemeNav__h1">Color Theory</h1>
             <ul className="schemeNav__ul">
-                <Link to={'/home'}><li>Home</li></Link>
+                <Link to={'/home'} id="home" onClick={setState}><li id="home">Home</li></Link>
                 <Link to={'/monochromatic'}><li>Monochromatic</li></Link>
                 <Link to={'/analogic'}><li>Analogic</li></Link>
                 <Link to={'/complementary'}><li>Complementary</li></Link>
