@@ -25,7 +25,6 @@ function App() {
 			<ColorContext.Provider value={{ color, setColor, scheme, setScheme }}>
 				<SchemeNav />
 				<ColorNav />
-			</ColorContext.Provider>
 			<Routes>
 				<Route path='/home' element={<Home />} />
 				<Route path='/monochromatic' element={<Mono />} />
@@ -34,6 +33,7 @@ function App() {
 				<Route path='/complementary' element={<Complementary />} />
 				<Route path='/analogic' element={<Analogic />} />
 			</Routes>
+			</ColorContext.Provider>
 		</div>
 	);
 }
