@@ -35,10 +35,11 @@ function Complementary(props) {
 					with a complementary combination of colors looks more traditional.
 			</div>
 
-			<div key={results.hex} className='scheme__colorBlocksDiv'>
+			<div  className='scheme__colorBlocksDiv'>
 				{results.colors.map((color) => {
 					return (
 						<div
+							key={color.hex.value}
 							className='scheme__colorBlocks'
 							style={{ backgroundColor: `${color.hex.value}` }}>
 							{color.hex.value} <br /> {color.name.value}

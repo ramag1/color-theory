@@ -36,7 +36,8 @@ function Quad(props) {
 			<div className='scheme__colorBlocksDiv'>
 				{results.colors.map((color) => {
 					return (
-						<div key={results.hex} 
+						<div
+							key={color.hex.value}
 							className='scheme__colorBlocks'
 							style={{ backgroundColor: `${color.hex.value}` }}>
 							{color.hex.value} <br /> {color.name.value}

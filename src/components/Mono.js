@@ -13,6 +13,7 @@ function Mono(props) {
 			.then((res) => res.json())
 			.then((json) => {
 				setResults(json);
+				console.log(json)
 			})
 			.catch(console.error);
 	}, [color]);
@@ -33,10 +34,10 @@ function Mono(props) {
 					draw attention to itself, instead letting the content to shine.
 			</div>
 
-			<div key={results.color} className='scheme__colorBlocksDiv'>
+			<div className='scheme__colorBlocksDiv'>
 				{results.colors.map((color) => {
 					return (
-						<div
+						<div key={color.hex.value}
 							className='scheme__colorBlocks'
 							style={{ backgroundColor: `${color.hex.value}` }}>
 							{color.hex.value} <br /> {color.name.value}
