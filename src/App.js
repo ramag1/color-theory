@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-
 import { useState } from 'react';
 import { ColorContext } from './components/colorContext';
 import { Routes, Route, Link } from 'react-router-dom';

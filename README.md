@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+## Project Description 
+Color Theory - a browser-based tool coded in React using JavaScript and CSS.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a color scheme generator. With a brief education on the science of Color Theory for each of the main schemes, users can generate a personalized scheme by selecting their favorite color and reveal the complimentary, quadratic, monochromatic, anologous, and triadic palettes. Great for web design!
 
-## Available Scripts
+<!-- Link to the [game](https://ramag1.github.io/emoji-memory/).
+![general outline](./assets/emoji-game.png)
+![general outline](./assets/superhero-game.png) -->
 
-In the project directory, you can run:
+## Installation Instructions
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Wire Frames  
+![Screen Shot 2022-01-04 at 6 07 57 PM](https://media.git.generalassemb.ly/user/40259/files/4a87be80-6d89-11ec-98ae-992428430300)
+![Screen Shot 2022-01-04 at 6 08 05 PM](https://media.git.generalassemb.ly/user/40259/files/4f4c7280-6d89-11ec-9cbe-5f7a281a3756)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### MVP Goals
+As a user, I want to know about the 3 main color schemes in color theory.
+As a user, I want to select any color to find out more about the various color shemes.
+As a user, once my color is selected, I want to select from one of the 3 schemes to see each scheme reflected to the color I picked.
+As a user, each time I select a color scheme, I want to see information/background on this particular scheme. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Stretch Goals
+As a user, I want to know about the 5 main color schemes in color theory.
+As a user, once my color is selected, I want to select from one of the 5 schemes to see each scheme reflected to the color I picked.
+As a user, i want the option to input a search for my favorite color and return the proper shade.
+As a user, I want to see a cool fade in effect when the color schemes are displayed.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Open Issues & Challenges
