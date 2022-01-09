@@ -14,10 +14,11 @@ function Analogic(props) {
 			.then((json) => {
 				setResults(json);
 			})
+			.catch(console.error);
 	}, [color]);
 
 	if (!results) {
-		return null;
+		return <p>Oops, there was an error</p>
 	}
 
 	return (
@@ -35,8 +36,7 @@ function Analogic(props) {
 			<div className='scheme__colorBlocksDiv'>
 				{results.colors.map((color) => {
 					return (
-						<div
-							key={color.hex.value}
+						<div key={color.hex.value}
 							className='scheme__colorBlocks'
 							style={{ backgroundColor: `${color.hex.value}` }}>
 							{color.hex.value} <br /> {color.name.value}

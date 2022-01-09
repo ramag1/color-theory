@@ -13,7 +13,6 @@ function Mono(props) {
 			.then((res) => res.json())
 			.then((json) => {
 				setResults(json);
-				console.log(json)
 			})
 			.catch(console.error);
 	}, [color]);
