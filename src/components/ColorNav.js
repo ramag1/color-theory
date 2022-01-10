@@ -1,5 +1,5 @@
 import React, { useContext , useState} from 'react';
-import { ColorContext } from './colorContext';
+import { ColorContext } from '../colorContext';
 
 
 function ColorNav(props) {

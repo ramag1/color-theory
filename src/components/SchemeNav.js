@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useContext, useState } from 'react';
-import { ColorContext } from './colorContext';
+import { useContext} from 'react';
+import { ColorContext } from '../colorContext';
 
 function SchemeNav(props) {
      const { scheme, setScheme } = useContext(ColorContext);

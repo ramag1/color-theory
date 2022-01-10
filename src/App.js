@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { ColorContext } from './Components/colorContext';
-import { Routes, Route, Link } from 'react-router-dom';
+import { ColorContext } from './colorContext';
+import { Routes, Route} from 'react-router-dom';
 
 import './App.css';
 import SchemeNav from './Components/SchemeNav';

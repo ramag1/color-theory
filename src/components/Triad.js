@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState, useContext } from 'react';
-import { ColorContext } from './colorContext';
+import { ColorContext } from '../colorContext';
 
 function Triad(props) {
 	const { color, setColor } = useContext(ColorContext);
