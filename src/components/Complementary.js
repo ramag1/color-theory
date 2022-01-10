@@ -1,4 +1,3 @@
-import React from 'react';
 import { useEffect, useState , useContext} from 'react';
 import { ColorContext } from '../colorContext';
 
@@ -25,14 +24,9 @@ function Complementary(props) {
 		<div className='scheme__div'>
 			<div className='scheme__details'>
 				<h2 className='scheme__h2'>About Complementary Colors </h2>
-					Complementary colors are shades that are located directly across from
-					each other on the wheel. These colors are complementary because they
-					are said to work well together. Creates a high-contrast and vibrant
-					look.
+					Complementary colors are shades that are located directly across from each other on the wheel. This scheme creates a high-contrast and vibrant look.
 					<h3>When to use:</h3>
-					This color scheme is useful when you need to emphasize something as it
-					focuses the attention towards a particular object. Often, a design
-					with a complementary combination of colors looks more traditional.
+					Use when needing to emphasize something, as it focuses the attention towards a particular object. Often, a design with a complementary combination of colors looks more traditional.
 			</div>
 
 			<div  className='scheme__colorBlocksDiv'>
