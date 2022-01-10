@@ -10,7 +10,7 @@ function Home(props) {
                 <br/><br/>
 
                 <h3>How To:</h3>
-                Select a shade
+                Click on the box to select a shade under "Select Your Color"
                 <br/>
                 Next, click on each of the schemes above to reveal more about the scheme and the corresponding color palette.
 			</div>
