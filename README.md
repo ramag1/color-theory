@@ -1,13 +1,13 @@
 ## Project Description 
 Color Theory - a browser-based tool coded in React using JavaScript and CSS.
 
-This project is a color scheme generator. With a brief education on the science of Color Theory for each of the main schemes, users can generate a personalized scheme by selecting their favorite color and reveal the complimentary, quadratic, monochromatic, anologous, and triadic palettes. Great for web design!
+This tool is a color scheme generator. With a brief education on the science of Color Theory for each of the main schemes, users can generate a personalized scheme by selecting their favorite color and reveal the complimentary, quadratic, monochromatic, anologous, and triadic palettes. Great for web design!
 
-<!-- Link to the [game](https://ramag1.github.io/emoji-memory/).
-![general outline](./assets/emoji-game.png)
-![general outline](./assets/superhero-game.png) -->
+Link to the [tool](https://colortheory.netlify.app/home).
+
 
 ## Installation Instructions
+Click on the link to the tool and navigate in your browser window.
 
 
 ## Wire Frames  
