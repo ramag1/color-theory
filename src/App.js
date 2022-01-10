@@ -3,14 +3,14 @@ import { ColorContext } from './colorContext';
 import { Routes, Route} from 'react-router-dom';
 
 import './App.css';
-import SchemeNav from './Components/SchemeNav';
-import Triad from './Components/Triad';
-import Quad from './Components/Quad';
-import Analogic from './Components/Analogic';
-import Home from './Components/Home';
-import ColorNav from './Components/ColorNav';
-import Mono from './Components/Mono';
-import Complementary from './Components/Complementary';
+import SchemeNav from './components/SchemeNav';
+import Triad from './components/Triad';
+import Quad from './components/Quad';
+import Analogic from './components/Analogic';
+import Home from './components/Home';
+import ColorNav from './components/ColorNav';
+import Mono from './components/Mono';
+import Complementary from './components/Complementary';
 
 
 function App() {
