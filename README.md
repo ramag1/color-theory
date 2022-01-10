@@ -24,6 +24,7 @@ As a user, each time I select a color scheme, I want to see information/backgrou
 ### Stretch Goals
 As a user, I want to know about the 5 main color schemes in color theory.
 As a user, once my color is selected, I want to select from one of the 5 schemes to see each scheme reflected to the color I picked.
+As a user, I want to see an error page if I end up at an inactive link.
 As a user, i want the option to input a search for my favorite color and return the proper shade.
 As a user, I want to see a cool fade in effect when the color schemes are displayed.
 
