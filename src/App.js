@@ -23,16 +23,16 @@ function App() {
 			<ColorContext.Provider value={{ color, setColor }}>
 				<SchemeNav />
 				<ColorNav />
-				<Routes>
-					<Route path='/' element={<Home />} />
-					<Route path='/home' element={<Home />} />
-					<Route path='/monochromatic' element={<Mono />} />
-					<Route path='/quad' element={<Quad />} />
-					<Route path='/triad' element={<Triad />} />
-					<Route path='/complementary' element={<Complementary />} />
-					<Route path='/analogic' element={<Analogic />} />
-					<Route path='/*' element={<Error />} />
-				</Routes>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/home' element={<Home />} />
+            <Route path='/monochromatic' element={<Mono />} />
+            <Route path='/quad' element={<Quad />} />
+            <Route path='/triad' element={<Triad />} />
+            <Route path='/complementary' element={<Complementary />} />
+            <Route path='/analogic' element={<Analogic />} />
+            <Route path='/*' element={<Error />} />
+          </Routes>
 			</ColorContext.Provider>
 		</div>
 	);

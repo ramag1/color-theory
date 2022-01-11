@@ -16,16 +16,16 @@ Click on the link to the tool and navigate in your browser window.
 
 
 ### MVP Goals
-As a user, I want to know about the 3 main color schemes in color theory.
-As a user, I want to select any color to find out more about the various color shemes.
-As a user, once my color is selected, I want to select from one of the 3 schemes to see each scheme reflected to the color I picked.
-As a user, each time I select a color scheme, I want to see information/background on this particular scheme. 
+As a user, I want to know about the 3 main color schemes in color theory.<br>
+As a user, I want to select any color to find out more about the various color shemes.<br>
+As a user, once my color is selected, I want to select from one of the 3 schemes to see each scheme reflected to the color I picked.<br>
+As a user, each time I select a color scheme, I want to see information/background on this particular scheme. <br>
 
 ### Stretch Goals
-As a user, I want to know about the 5 main color schemes in color theory.
-As a user, once my color is selected, I want to select from one of the 5 schemes to see each scheme reflected to the color I picked.
-As a user, I want to see an error page if I end up at an inactive link.
-As a user, i want the option to input a search for my favorite color and return the proper shade.
-As a user, I want to see a cool fade in effect when the color schemes are displayed.
+As a user, I want to know about the 5 main color schemes in color theory.<br>
+As a user, once my color is selected, I want to select from one of the 5 schemes to see each scheme reflected to the color I picked.<br>
+As a user, I want to see an error page if I end up at an inactive link.<br>
+As a user, i want the option to input a search for my favorite color and return the proper shade.<br>
+As a user, I want to see a cool fade in effect when the color schemes are displayed.<br>
 
 ## Open Issues & Challenges
