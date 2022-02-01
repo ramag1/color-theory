@@ -20,7 +20,7 @@ function App() {
 
   return (
 		<div className='App'>
-			<ColorContext.Provider value={{ color, setColor }}>
+			<ColorContext.Provider value={{ color, setColor}}>
 				<SchemeNav />
 				<ColorNav />
           <Routes>
